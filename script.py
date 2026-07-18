@@ -252,7 +252,8 @@ def fetch_objekt_data(req_query:str) -> dict[str,CollectionCount]:
     query = req_query
 
     headers = {
-        'Content-Type': 'Bifrost v0.1'
+        'Content-Type': 'application/json',
+        'User-Agent': 'Bifrost v0.1'
     }
     data = {'query': query}
 
